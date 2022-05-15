@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">Happy Places</string>
+    <string name="facebook_app_id">967839090586732</string>
+    <string name="facebook_client_token">932eb3646c7c6d5443ee72f91bc24d4f</string>
+    <string name="sign_in_title">Sign in to your account</string>
+    <string name="type_email_hint">Type your Email</string>
+    <string name="type_name_hint">Type your Name</string>
+    <string name="type_phone_hint">Type your Phone Number</string>
+    <string name="type_password_hint">Type Your Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="have_account">Already registered?</string>
+    <string name="to_sign_up">Sign Up →</string>
+    <string name="to_sign_in">Sign In →</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="retype_password_hint">Retype Your Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_out">Log Out</string>
+    <string name="type_password">Type Your Password</string>
+    <string name="about">About</string>
+    <string name="contact">Contact</string>
+    <string name="settings">Settings</string>
+    <string name="happy_place">Happy Place</string>
+    <string name="default_location">📍 Herriman, Utah</string>
+    <string name="about_text">Welcome to Happy Places!
+    <br /><br /> \n \n This is the best app for discovering wonderful destinations for your next restless city break or five-star tropical vacation.
+    <br /><br /> \n \n Have you visited such a place already? Share your experience with us at discover@happyplaces.com
+    <br /><br /> \n \n Stay with us for more thrilling experiences!
+    </string>
+    <string name="contact_text">Contact us!
+    <br /><br /> \n \n Do you have questions? → customer_service@happyplaces.com
+    <br /><br /> \n \n Do you have happy places recommendation? → recommendation@happyplaces.com
+    <br /><br /> \n \n Do you have problems? → complaints@happyplaces.com
+    <br /><br /> \n \n Follow us on Instagram! → @happy_places_official
+    </string>
 </resources>

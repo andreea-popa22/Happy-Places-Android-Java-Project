@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sign_in_text" type="id">sign_in_text</item>
+    <item name="til_login_email" type="id">til_login_email</item>
+    <item name="et_login_email" type="id">et_login_email</item>
+    <item name="til_login_password" type="id">til_login_password</item>
+    <item name="et_login_password" type="id">et_login_password</item>
+    <item name="btn_login" type="id">btn_login</item>
+    <item name="no_account" type="id">no_account</item>
+    <item name="tv_to_sign_up" type="id">tv_to_sign_up</item>
+</resources>
