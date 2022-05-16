@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         locationModalArrayList.add(new LocationModal("Bucharest", "Beautiful but crowded"));
         locationModalArrayList.add(new LocationModal("Istanbul", "Did someone say kebab?"));
         locationModalArrayList.add(new LocationModal("Amsterdam", "So many channels"));
-        locationModalArrayList.add(new LocationModal("Athens", "One of the most hystorical cities"));
+        locationModalArrayList.add(new LocationModal("Athens", "One of the most historical cities"));
         locationModalArrayList.add(new LocationModal("Barcelona", "Everything for everyone"));
 
         // initializing our adapter class.
