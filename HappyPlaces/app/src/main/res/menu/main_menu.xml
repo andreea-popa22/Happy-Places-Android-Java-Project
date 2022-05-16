@@ -13,4 +13,9 @@
         android:id="@+id/contactFragment"
         android:icon="@drawable/contact_icon"
         android:title="@string/contact"/>
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share_icon"
+        android:title="@string/share"
+        app:showAsAction="always"/>
 </menu>
