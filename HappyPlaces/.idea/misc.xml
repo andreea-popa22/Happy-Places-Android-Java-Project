@@ -9,13 +9,15 @@
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/activity_sign_in.xml" value="0.152" />
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/course_rv_item.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/fragment_about.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/fragment_contact.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/fragment_happy_places.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/nav_header.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/layout/toolbar.xml" value="0.1" />
         <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/menu/user_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/menu/search_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Andreea/Desktop/AN 3/SEM 2/Android/proiect/HappyPlaces/app/src/main/res/menu/user_menu.xml" value="0.4" />
       </map>
     </option>
   </component>

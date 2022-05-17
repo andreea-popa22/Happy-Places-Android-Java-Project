@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
     app:startDestination="@id/happyPlacesActivity">
+
     <activity
         android:id="@+id/happyPlacesActivity"
         android:name="com.happyplaces.HappyPlacesActivity"
         android:label="activity_happy_places"
         tools:layout="@layout/activity_happy_places" >
-        <action
-            android:id="@+id/action_happyPlacesFragment_to_aboutFragment"
-            app:destination="@id/aboutFragment" />
-        <action
-            android:id="@+id/action_happyPlacesFragment_to_contactFragment"
-            app:destination="@id/contactFragment" />
+<!--        <action-->
+<!--            android:id="@+id/action_happyPlacesFragment_to_aboutFragment"-->
+<!--            app:destination="@id/aboutFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_happyPlacesFragment_to_contactFragment"-->
+<!--            app:destination="@id/contactFragment" />-->
     </activity>
     <fragment
         android:id="@+id/aboutFragment"

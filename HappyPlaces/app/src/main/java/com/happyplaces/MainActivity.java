@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import androidx.appcompat.widget.Toolbar;
@@ -13,6 +15,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.happyplaces.auth.SignInActivity;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -36,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         // Find our drawer view
         drawerLayout = (DrawerLayout) findViewById(R.id.my_drawer_layout);
         nvDrawer = (NavigationView) findViewById(R.id.nav_view);
-        // Setup drawer view
 
+        // Setup drawer view
         setupDrawerContent(nvDrawer);
         drawerToggle = setupDrawerToggle();
 
@@ -50,7 +55,26 @@ public class MainActivity extends AppCompatActivity {
 
         drawerLayout = (DrawerLayout) findViewById(R.id.my_drawer_layout);
         nvDrawer = (NavigationView) findViewById(R.id.nav_view);
-        // Setup drawer view
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.user_menu, menu);
+        checkCurrentUser(menu);
+        return true;
+    }
+
+    public void checkCurrentUser(Menu menu) {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            menu.getItem(0).setVisible(false);
+            menu.getItem(1).setVisible(true);
+        } else {
+            menu.getItem(0).setVisible(true);
+            menu.getItem(1).setVisible(false);
+        }
     }
 
     private ActionBarDrawerToggle setupDrawerToggle() {
@@ -61,10 +85,22 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.log_out_button:
+                FirebaseAuth.getInstance().signOut();
+                Intent refresh = new Intent(this, MainActivity.class);
+                startActivity(refresh);
+                return true;
+            case R.id.redirect_sign_in:
+                Intent intent = new Intent(this, SignInActivity.class);
+                startActivity(intent);
+                return true;
+        }
         if (drawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
         return super.onOptionsItemSelected(item);
+
     }
 
     @Override
