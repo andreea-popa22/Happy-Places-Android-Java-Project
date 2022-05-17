@@ -1,6 +1,6 @@
 package com.happyplaces.Course;
 
-public class LocationModal {
+public class LocationModel {
 
     // variables for our course
     // name and description.
@@ -8,7 +8,7 @@ public class LocationModal {
     private String locationDescription;
 
     // creating constructor for our variables.
-    public LocationModal(String locationName, String locationDescription) {
+    public LocationModel(String locationName, String locationDescription) {
         this.locationName = locationName;
         this.locationDescription = locationDescription;
     }

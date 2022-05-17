@@ -3,19 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/happyPlacesFragment">
-    <fragment
-        android:id="@+id/happyPlacesFragment"
-        android:name="com.happyplaces.HappyPlacesFragment"
-        android:label="fragment_happy_places"
-        tools:layout="@layout/fragment_happy_places" >
+    app:startDestination="@id/happyPlacesActivity">
+    <activity
+        android:id="@+id/happyPlacesActivity"
+        android:name="com.happyplaces.HappyPlacesActivity"
+        android:label="activity_happy_places"
+        tools:layout="@layout/activity_happy_places" >
         <action
             android:id="@+id/action_happyPlacesFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
         <action
             android:id="@+id/action_happyPlacesFragment_to_contactFragment"
             app:destination="@id/contactFragment" />
-    </fragment>
+    </activity>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.happyplaces.AboutFragment"

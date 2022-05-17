@@ -13,20 +13,20 @@ import com.happyplaces.R;
 
 import java.util.ArrayList;
 
-public class LoacationAdapter extends RecyclerView.Adapter<LoacationAdapter.ViewHolder> {
+public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHolder> {
 
     // creating a variable for array list and context.
-    private ArrayList<LocationModal> locationModalArrayList;
+    private ArrayList<LocationModel> locationModalArrayList;
     private Context context;
 
     // creating a constructor for our variables.
-    public LoacationAdapter(ArrayList<LocationModal> locationModalArrayList, Context context) {
+    public LocationAdapter(ArrayList<LocationModel> locationModalArrayList, Context context) {
         this.locationModalArrayList = locationModalArrayList;
         this.context = context;
     }
 
     // method for filtering our recyclerview items.
-    public void filterList(ArrayList<LocationModal> filterllist) {
+    public void filterList(ArrayList<LocationModel> filterllist) {
         // below line is to add our filtered
         // list in our course array list.
         locationModalArrayList = filterllist;
@@ -37,16 +37,16 @@ public class LoacationAdapter extends RecyclerView.Adapter<LoacationAdapter.View
 
     @NonNull
     @Override
-    public LoacationAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public LocationAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // below line is to inflate our layout.
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.course_rv_item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull LoacationAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull LocationAdapter.ViewHolder holder, int position) {
         // setting data to our views of recycler view.
-        LocationModal modal = locationModalArrayList.get(position);
+        LocationModel modal = locationModalArrayList.get(position);
         holder.courseNameTV.setText(modal.getLocationName());
         holder.courseDescTV.setText(modal.getLocationDescription());
     }
