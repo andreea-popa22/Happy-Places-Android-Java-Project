@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="@id/sign_in_text">
 
         <EditText
-            android:id="@+id/et_login_email"
+            android:id="@+id/et_signin_email"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         app:passwordToggleEnabled="true">
 
         <EditText
-            android:id="@+id/et_login_password"
+            android:id="@+id/et_signin_password"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,7 +77,6 @@
         android:gravity="center"
         android:background="@drawable/gradient"
         android:text="@string/sign_in"
-        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +96,6 @@
             android:id="@+id/no_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:text="@string/no_account"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/btn_login" />
@@ -106,7 +104,6 @@
             android:id="@+id/tv_to_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/to_sign_up"
             android:layout_marginTop="17dp"

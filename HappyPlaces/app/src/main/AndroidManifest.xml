@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.happyplaces">
+    package="happyplaces">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
         android:name="android.permission.REAL_GET_TASKS"
         tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -17,13 +18,13 @@
         android:theme="@style/Theme.HappyPlaces"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".HappyPlacesActivity"
+            android:name="com.example.happyplaces.HappyPlacesActivity"
             android:exported="true" />
         <activity
-            android:name=".auth.SignUpActivity"
+            android:name="com.example.happyplaces.auth.SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".auth.SignInActivity"
+            android:name="com.example.happyplaces.auth.SignInActivity"
             android:exported="true" />
 
         <meta-data
@@ -34,7 +35,7 @@
             android:value="@string/facebook_client_token" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.happyplaces.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
