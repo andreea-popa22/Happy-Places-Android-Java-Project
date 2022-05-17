@@ -1,4 +1,4 @@
-package com.example.happyplaces.auth;
+package com.happyplaces.auth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,8 +14,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.example.happyplaces.MainActivity;
-import happyplaces.R;
+import com.happyplaces.MainActivity;
+import com.happyplaces.R;
 
 public class SignInActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -30,20 +30,22 @@ public class SignInActivity extends AppCompatActivity {
 
         findViewById(R.id.tv_to_sign_up).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
+                Intent intent = new Intent(SignInActivity.this, com.happyplaces.auth.SignUpActivity.class);
                 startActivity(intent);
             }
         });
 
         findViewById(R.id.btn_login).setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(SignInActivity.this, "Authentication succeeded.",
-                        Toast.LENGTH_SHORT).show();
                 TextView et_signin_email = findViewById(R.id.et_signin_email);
                 TextView et_signin_password = findViewById(R.id.et_signin_password);
-                signIn(et_signin_email.toString().trim(), et_signin_password.toString().trim());
+                String email = et_signin_email.getText().toString().trim();
+                String password = et_signin_password.getText().toString().trim();
+                signIn(email, password);
+                //MainActivity.recreate();
                 Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

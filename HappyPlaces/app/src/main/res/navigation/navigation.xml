@@ -7,7 +7,7 @@
 
     <activity
         android:id="@+id/happyPlacesActivity"
-        android:name="happyplaces.HappyPlacesActivity"
+        android:name="com.happyplaces.HappyPlacesActivity"
         android:label="activity_happy_places"
         tools:layout="@layout/activity_happy_places" >
 <!--        <action-->
@@ -19,12 +19,12 @@
     </activity>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="happyplaces.AboutFragment"
+        android:name="com.happyplaces.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/contactFragment"
-        android:name="happyplaces.ContactFragment"
+        android:name="com.happyplaces.ContactFragment"
         android:label="fragment_contact"
         tools:layout="@layout/fragment_contact" />
 </navigation>

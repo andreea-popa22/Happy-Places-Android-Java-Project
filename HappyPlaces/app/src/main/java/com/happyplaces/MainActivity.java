@@ -1,4 +1,4 @@
-package com.example.happyplaces;
+package com.happyplaces;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,11 +17,9 @@ import androidx.fragment.app.FragmentManager;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.example.happyplaces.auth.SignInActivity;
+import com.happyplaces.auth.SignInActivity;
 
 import androidx.drawerlayout.widget.DrawerLayout;
-
-import happyplaces.R;
 
 public class MainActivity extends AppCompatActivity {
     public DrawerLayout drawerLayout;
@@ -58,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.my_drawer_layout);
         nvDrawer = (NavigationView) findViewById(R.id.nav_view);
 
+    }
+
+    @Override
+    protected void onRestart() {
+        this.recreate();
+        super.onRestart();
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.example.happyplaces.auth;
+package com.happyplaces.auth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,8 +14,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.example.happyplaces.MainActivity;
-import happyplaces.R;
+import com.happyplaces.MainActivity;
+import com.happyplaces.R;
 
 public class SignUpActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -39,19 +39,20 @@ public class SignUpActivity extends AppCompatActivity {
                 TextView et_register_email = findViewById(R.id.et_register_email);
                 TextView et_register_password = findViewById(R.id.et_register_password);
                 TextView et_confirm_password = findViewById((R.id.et_confirm_password));
-                String email = et_register_email.toString().trim();
-                String password = et_register_password.toString().trim();
-                String confirm_password = et_confirm_password.toString().trim();
-//                if (password.equals(confirm_password)){
+                String email = et_register_email.getText().toString().trim();
+                String password = et_register_password.getText().toString().trim();
+                String confirm_password = et_confirm_password.getText().toString().trim();
+                if (password.equals(confirm_password)){
                     createAccount(email, password);
                     Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                     startActivity(intent);
+                    finish();
                     Toast.makeText(SignUpActivity.this, "Account created.",
                             Toast.LENGTH_SHORT).show();
-//                } else {
-//                    Toast.makeText(SignUpActivity.this, "Creating account failed.",
-//                            Toast.LENGTH_SHORT).show();
-//                }
+                } else {
+                    Toast.makeText(SignUpActivity.this, "Creating account failed.",
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

@@ -1,14 +1,12 @@
-package com.example.happyplaces;
+package com.happyplaces;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import happyplaces.R;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import happyplaces.R;
 
 /**
  * A simple {@link Fragment} subclass.

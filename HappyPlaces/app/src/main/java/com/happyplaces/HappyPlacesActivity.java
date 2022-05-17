@@ -1,4 +1,4 @@
-package com.example.happyplaces;
+package com.happyplaces;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,12 +15,10 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
-import com.example.happyplaces.RecyclerView.LocationAdapter;
-import com.example.happyplaces.RecyclerView.LocationModel;
+import com.happyplaces.RecyclerView.LocationAdapter;
+import com.happyplaces.RecyclerView.LocationModel;
 
 import java.util.ArrayList;
-
-import happyplaces.R;
 
 public class HappyPlacesActivity extends AppCompatActivity {
     private RecyclerView locationRV;

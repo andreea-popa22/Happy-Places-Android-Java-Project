@@ -1,4 +1,4 @@
-package com.example.happyplaces;
+package com.happyplaces;
 
 import org.junit.Test;
 
