@@ -144,6 +144,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, HappyPlacesActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.share:
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "Hello from our Happy Places App!");
+                sendIntent.setType("text/plain");
+
+                Intent shareIntent = Intent.createChooser(sendIntent, null);
+                startActivity(shareIntent);
+                break;
             default:
                 // TODO
         }
