@@ -1,4 +1,4 @@
-package com.happyplaces.Course;
+package com.happyplaces.RecyclerView;
 
 import android.content.Context;
 import android.view.LayoutInflater;

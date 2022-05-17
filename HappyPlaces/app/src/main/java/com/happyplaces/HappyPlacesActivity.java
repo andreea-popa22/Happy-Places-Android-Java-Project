@@ -15,8 +15,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
-import com.happyplaces.Course.LocationAdapter;
-import com.happyplaces.Course.LocationModel;
+import com.happyplaces.RecyclerView.LocationAdapter;
+import com.happyplaces.RecyclerView.LocationModel;
 
 import java.util.ArrayList;
 

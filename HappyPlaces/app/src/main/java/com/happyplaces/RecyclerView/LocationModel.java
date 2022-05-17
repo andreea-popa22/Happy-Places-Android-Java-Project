@@ -1,4 +1,4 @@
-package com.happyplaces.Course;
+package com.happyplaces.RecyclerView;
 
 public class LocationModel {
 
