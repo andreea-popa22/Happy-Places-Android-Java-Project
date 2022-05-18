@@ -84,6 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/til_login_password" />
 
     <LinearLayout
+        android:id="@+id/tv_no_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -114,7 +115,17 @@
             android:padding="5dp"/>
     </LinearLayout>
 
-
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/signin_facebook_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/facebook"
+        android:text="@string/fb_login"
+        android:layout_marginTop="17dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_no_account" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
