@@ -105,7 +105,7 @@ public class HappyPlacesActivity extends AppCompatActivity {
     private void buildRecyclerView() {
         locationModalArrayList = new ArrayList<>();
 
-        locationModalArrayList.add(new LocationModel("Roma", "Italy capital and good place for eating pizza"));
+        locationModalArrayList.add(new LocationModel("Roma", "Good place for eating pizza"));
         locationModalArrayList.add(new LocationModel("Paris", "City of love"));
         locationModalArrayList.add(new LocationModel("Brussels", "Belgium's treasure"));
         locationModalArrayList.add(new LocationModel("Berlin", "Nice place for beer"));
