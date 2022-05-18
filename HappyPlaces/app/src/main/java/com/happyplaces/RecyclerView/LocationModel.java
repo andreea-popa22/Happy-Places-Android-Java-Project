@@ -6,11 +6,13 @@ public class LocationModel {
     // name and description.
     private String locationName;
     private String locationDescription;
+    private String photoURL;
 
     // creating constructor for our variables.
-    public LocationModel(String locationName, String locationDescription) {
+    public LocationModel(String locationName, String locationDescription, String photoURL) {
         this.locationName = locationName;
         this.locationDescription = locationDescription;
+        this.photoURL = photoURL;
     }
 
     // creating getter and setter methods.
@@ -28,5 +30,13 @@ public class LocationModel {
 
     public void setLocationDescription(String locationDescription) {
         this.locationDescription = locationDescription;
+    }
+
+    public String getPhotoURL() {
+        return photoURL;
+    }
+
+    public void setPhotoURL(String photoURL) {
+        this.photoURL = photoURL;
     }
 }

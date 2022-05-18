@@ -4,12 +4,14 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.happyplaces.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -49,6 +51,8 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
         LocationModel modal = locationModalArrayList.get(position);
         holder.courseNameTV.setText(modal.getLocationName());
         holder.courseDescTV.setText(modal.getLocationDescription());
+        //Picasso.with(context.getApplicationContext()).load(modal.getPhotoURL()).resize(100, 100).into(holder.photo);
+        Picasso.get().load(modal.getPhotoURL()).resize(100, 100).into(holder.photo);
     }
 
     @Override
@@ -61,12 +65,14 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
 
         // creating variables for our views.
         private TextView courseNameTV, courseDescTV;
+        private ImageView photo;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             // initializing our views with their ids.
             courseNameTV = itemView.findViewById(R.id.idTVCourseName);
             courseDescTV = itemView.findViewById(R.id.idTVCourseDescription);
+            photo = itemView.findViewById(R.id.place_img);
         }
     }
 }
